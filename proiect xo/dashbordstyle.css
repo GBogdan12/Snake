@@ -1,0 +1,22 @@
+﻿body {
+    background-image: url('Resource/755385.jpg');
+    background-size: cover;
+}
+
+.container1{
+    align-self:center;
+}
+
+@media print {
+    .refresh, .navbar {
+        display: none;
+    }
+    .scor {
+        background-color:white;
+        width:100%;
+        height:100%;
+        margin:5px;
+
+    }
+}
+

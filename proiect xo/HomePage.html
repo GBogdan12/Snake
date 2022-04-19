@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Home Page Snake</title>
+    <link rel="stylesheet" href="StyleGlobal.less">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="HomePage.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand">Snake Game</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/HomePage.html">Joc (current)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/DashBord.html">DashBord</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <h1 id="playText">Let's Play</h1>
+        <button type="button" id="restartBtn" onclick="restart()">Restart</button>
+        <div class="gameboard">
+            <div class="big" id="border">
+                <canvas id="snakeboard" width="790" height="590"></canvas>
+            </div>
+            <div class="score">
+                <h2>DeashBord</h2>
+                <h2>Scor: </h2>
+                <h2 id="scorecurrent" style="color:red ; text-align:left"> 0 </h2>
+                <h4>Ultimul Scor: </h4><p> </p>
+                <h4 id="lastscore"> 0</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

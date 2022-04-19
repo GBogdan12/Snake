@@ -1,0 +1,32 @@
+﻿.scor {
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+    background-color: white;
+    text-align:center;
+    align-self:center
+}
+.scor0 {
+    height: 60px;
+    animation-name: sprite;
+    background: url('Resource/snake sass1.png');
+    animation: sprite 1.5s steps(3) infinite;
+}
+.scor11 {
+    height: 60px;
+    animation-name: sprite;
+    background: url('Resource/snake sass1.png');
+    animation: sprite 1.5s steps(3) infinite;
+}
+
+@keyframes sprite{
+    from {
+        background-position-x: 0px;
+    }
+
+    to {
+        background-position-x: -360px;
+    }
+}
+
+
